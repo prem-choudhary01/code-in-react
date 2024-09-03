@@ -23,7 +23,7 @@ function App() {
     setPassword(pass);
   }, [length, numberAllowed, charAllowed, setPassword]);
 
-  const copyPasswordToClipboard = useCallback(() => {
+  const copyPassword = useCallback(() => {
     passwordRef.current?.select();
     window.navigator.clipboard.writeText(password);
   }, [password]);
@@ -45,7 +45,7 @@ function App() {
           ref={passwordRef}
         />
         <button
-          onClick={copyPasswordToClipboard}
+          onClick={copyPassword}
           className="outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0"
         >
           copy
