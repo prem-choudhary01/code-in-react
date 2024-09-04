@@ -7,6 +7,7 @@ function App() {
   let [counter, setCounter] = useState(0);
   let [multiplication, setMultiplication] = useState(1);
   let [division, setDivision] = useState(20);
+  // let [copyText , setCopyText] = useState("")
 
   const addValue = () => {
     if (counter >= 10) return;
@@ -27,6 +28,9 @@ function App() {
     // division / 2;
     setDivision(division / 2);
   };
+  // const copyText = () => {
+  //   window.navigator.clipboard.writeText(setCopyText);
+  // }
 
   return (
     <>
@@ -45,6 +49,22 @@ function App() {
       <br />
       <h3>Division{division}</h3>
       <button onClick={divisionValue}>Division value</button>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <div>
+        <input
+          type="text"
+          placeholder="Enter Your Name"
+        
+        />
+
+        <button
+          // onClick={copyPassword}
+        >copy</button>
+      </div>
+      
     </>
   );
 }

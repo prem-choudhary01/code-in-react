@@ -15,18 +15,19 @@ function App() {
     if (numberAllowed) str += "0123456789";
     if (charAllowed) str += "`!@#$%^&(){}[]_-=+~";
 
-    for (let i = 1; i <= length; i++) {
+    for (let i = 1; i <=length; i++) {
       let char = Math.floor(Math.random() * str.length + 1);
       pass += str.charAt(char);
     }
-
+ 
     setPassword(pass);
   }, [length, numberAllowed, charAllowed, setPassword]);
 
   const copyPassword = useCallback(() => {
     passwordRef.current?.select();
+    passwordRef.current?.setSelectionRange(0,23);
     window.navigator.clipboard.writeText(password);
-  }, [password]);
+  }, [password]); // skip this
 
   // passwordGenerator;
   useEffect(() => {
