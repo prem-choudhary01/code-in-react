@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   const [amount, setAmount] = useState(0);
   const [from, setFrom] = useState("usd");
-  const [to, setTo] = useState("ind");
+  const [to, setTo] = useState("inr");
   const [convertedAmount, setConvertedAmount] = useState(0);
   const currencyInfo = useCurrencyInfo(from);
   const options = Object.keys(currencyInfo);
@@ -27,9 +27,11 @@ function App() {
   return (
     <div
       className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
-      style={{
-        // backgroundImage: `url('https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg')`,
-      }}
+      style={
+        {
+          // backgroundImage: `url('https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg')`,
+        }
+      }
     >
       <div className="w-full">
         <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
