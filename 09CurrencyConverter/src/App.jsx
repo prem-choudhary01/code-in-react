@@ -1,8 +1,13 @@
 import { useState } from 'react'
+import { InputBox } from './components'
+import useCurrencyInfo from './Hooks/useCurrencyInfo'
 import './App.css'
+// import { useMemo } from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [amount ,  setAmount] = useState(0)
+
 
   return (
     <>
