@@ -6,6 +6,15 @@ import "./App.css";
 function App() {
   // const [color, setColor] = useState("black");
 
+
+  const [registration , setRegistration] = useState(0)
+
+
+  const registrationvaluae =()=> {
+     
+    setRegistration(registration + 1)
+  }
+
   return (
     <>
       <div
@@ -39,7 +48,7 @@ function App() {
         <input
           className="border p-2 placeholder-black-600  bg-zinc-500 text-white"
           type="Password"
-          placeholder="confirm  Password"
+          placeholder="confirm  Password"   
         />
         <label>
           <input className=" p-2" type="checkbox" /> Remember me
@@ -59,8 +68,9 @@ function App() {
       <p>if you see any error please check again</p>
 
       <br />
-
-      <button className="bg-stone-700 outline-none px-5  py-1 rounded-full text-black-500 ">
+      <h3>registration {registration}</h3>
+      <button onClick={registrationvaluae} className="bg-stone-700 outline-none px-5  py-1 rounded-full text-black-500 ">
+    
         sign in
       </button>
       <button className="bg-stone-700 outline-none px-5  py-1 rounded-full text-black-500 shadow-xl ml-10">
@@ -68,13 +78,6 @@ function App() {
       </button>
       <br />
 
-      {/*   <input type="radio" id="html" name="fav_language" value="HTML"/>
-        <label for="html">HTML</label><br/>
-        <input type="radio" id="css" name="fav_language" value="CSS"/>
-        <label for="css">CSS</label><br/>
-        <input type="radio" id="javascript" name="fav_language" value="JavaScript"/>
-        <label for="javascript">JavaScript</label><br><br/>
-        <input type="submit" value="Submit"/> */}
     </>
   );
 }
