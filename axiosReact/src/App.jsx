@@ -14,13 +14,13 @@ function App() {
       try {
         const res = await axios.get("https://api.first.org/data/v1/countries");
         setCountry(res.data);
-        // console.log(setCountry);
+        // console.log(setCountry); 
       } catch (error) {
         setIsError(error.message);
       }
     };
 
-    getApiData();
+    getApiData();  
     
   }, []);
   return (
