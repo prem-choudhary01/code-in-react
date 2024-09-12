@@ -6,9 +6,9 @@ import axios from "axios";
 function App() {
   const [country, setCountry] = useState([]);
   const [isError, setIsError] = useState("");
-
+ 
   // using Async Await
-  
+
   useEffect(() => {
     const getApiData = async () => {
       try {
@@ -21,6 +21,7 @@ function App() {
     };
 
     getApiData();
+    
   }, []);
   return (
     <>
