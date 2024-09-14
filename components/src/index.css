@@ -39,7 +39,7 @@ h1 {
   line-height: 1.1;
 } */
 
-/* button {
+ /* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -56,7 +56,7 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-} */
+}  */
 
 /* @media (prefers-color-scheme: light) {
   :root {
@@ -96,8 +96,48 @@ button:focus-visible {
 #price{
   padding-top: 5px;
   width: 50%;
+  height: 25px;
+  margin-top: 1px;
 }
 img{
   height: 180px;
 }
 
+
+#btnn{
+  color: rgb(77, 77, 90);
+  font-size: 15px;
+  margin-left: 400px;
+}
+
+#box0{
+  height: 450px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+ }
+
+ /* #compo{
+  height: 400px;
+  width: 300px;
+  border: 2px solid rgb(5, 5, 5);
+
+ } */
+
+ /* #boxmodal{
+  height: 100px;
+  width: 150px;
+  border: 1px solid black;
+  display: none;
+  margin: auto;
+  
+ } */
+/* 
+ #boxmodal{
+  width: 1/2;
+  height: 1/2;
+
+ } */
+
+
+ 
