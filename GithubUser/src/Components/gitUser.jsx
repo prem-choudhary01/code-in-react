@@ -1,31 +1,33 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import './App.css';
+import React, { useState } from "react";
+import axios from "axios";
+import "./App.css";
 
-function App() {
-  const [username, setUsername] = useState('');
+function GitHub() {
+  const [username, setUsername] = useState("");
   const [user, setUser] = useState(null);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
 
   const handleSearch = async () => {
-    setError('');
+    setError("");
     try {
-      const response = await axios.get(`https://api.github.com/users/${username}`);
+      const response = await axios.get(
+        `https://api.github.com/users/${username}`
+      );
       setUser(response.data);
     } catch (error) {
-      setError('User not found');
+      setError("User not found");
       setUser(null);
     }
   };
 
   return (
     <div className="app">
-      <h1>GitHub User Finder</h1>
+      <h1>GitHub User find </h1>
       <div className="search-container">
         <input
           type="text"
           placeholder="Enter GitHub username"
-          value={username}
+          value={useState}
           onChange={(e) => setUsername(e.target.value)}
         />
         <button onClick={handleSearch}>Search</button>
@@ -47,4 +49,4 @@ function App() {
   );
 }
 
-export default App;
+export default GitHub;

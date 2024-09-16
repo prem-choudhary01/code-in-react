@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 
 import "./App.css";
+import Computer from "./Components/newpage";
 
 function App() {
   const [username, setUsername] = useState("");
@@ -22,22 +23,33 @@ function App() {
   };
 
   return (
-    <div className="app">
-      <h1>GitHub User Finder</h1>
-      <div className="search-container">
+    <div>
+      <Computer />
+
+      <h1 className="text-red-600">GitHub User Finder</h1>
+      <div>
+        <hr />
+        <br></br>
+        <a href="path/to/your/file.txt" download>
+          <button type="button"> Download</button>
+        </a>
         <input
+          className="border-spacing-10 mt-5 p-3 h-12 w-96"
           type="text"
-          placeholder="Enter GitHub username"
+          placeholder="Enter your GitHub username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
-        <button onClick={handleSearch}>Search</button>
+
+        <button className="text-white mr-10" onClick={handleSearch}>
+          Search
+        </button>
       </div>
 
       {error && <p className="error">{error}</p>}
 
       {user && (
-        <div className="user-card">
+        <div>
           <img src={user.avatar_url} alt="Avatar" />
           <h2>{user.name}</h2>
           <p>{user.bio}</p>
