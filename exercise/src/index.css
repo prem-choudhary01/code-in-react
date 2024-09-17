@@ -1,24 +1,25 @@
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
-*{
-  background-color: antiquewhite;
-}
-#parent {
-  margin-right: 50px;
-  background-color:white;
-  height: 400px;
-  width: 350px;
-  border: 1px solid black;
- 
+
+  /* background-color: antiquewhite; */
+
+#menu {
+  display: inline-flex;
+  list-style: none;
+  margin-right: 50px; 
+  background-color: white;
+   height: 800px;  
+   width: 350px; 
+   border: 1px solid black;
 }
 #img {
   height: 280px;
   width: 300px;
-  margin: auto;
+  /* margin: auto; */
 }
 h2 {
-  background-color: white ; 
+  background-color: white;
   margin-bottom: 2px;
 }
 
@@ -30,7 +31,10 @@ h2 {
 #btn:hover {
   color: brown;
 }
+/* #menu ul {
+  list-style: none;
+} */
+/* #menu li {
+  display: inline;
+} */
 
-#my-div{
-  
-}
