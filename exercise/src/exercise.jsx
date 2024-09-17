@@ -12,7 +12,7 @@ const Exercise = () => {
           <li key={i}>
             <h2>{title}</h2>
             <img id="img" src={url} />
-            <button id="btn">
+            <button id="btn"> 
               <span>see more</span>
             </button>
           </li>
