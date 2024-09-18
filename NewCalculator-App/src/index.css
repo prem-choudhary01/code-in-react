@@ -23,9 +23,9 @@ a {
   text-decoration: inherit;
 }
 a:hover {
+
   color: #0011ff;
 }
-
 
 body {
   margin: 0;
@@ -33,7 +33,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRizr2lpFUzj3_hy1tkGmVCPJURWOo_IA059A&s"); */
+
 }
 
 h1 {
@@ -44,6 +44,9 @@ h1 {
 button {
   border-radius: 8px;
   border: 6px solid transparent;
+
+  border: 1px solid transparent;
+
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
@@ -54,6 +57,7 @@ button {
 }
 button:hover {
   border-color: #0e1aed;
+  border-color: #646cff;
 }
 button:focus,
 button:focus-visible {
@@ -193,3 +197,4 @@ button:nth-child(20) {
   background-color: #ff4081;
   color: #fff;
 }
+

@@ -26,7 +26,7 @@ const Calculator = () => {
   return (
     <div className="calculator">
       <div className="display">
-        <div className="input">{input} </div>
+        <div className="input">{input} </div> 
         <div className="result">{result}</div>
       </div> 
       <div className="buttons"> 
