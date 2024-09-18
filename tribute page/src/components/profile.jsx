@@ -37,9 +37,9 @@ const OnePageProfile = () => {
             <li>
               PM Modi on US visit from Sept 21-23, to attend Quad Summit,
               address UN event Modi will attend the fourth Quad leaders' Summit
-              at Wilmington in Delaware on September 21 that is being hosted by
+              at Wilmington in Delaware on September 21 that is being hosted by 
               US President Joe Biden, the Ministry of External Affairs (MEA)
-              said announcing the prime minister's trip.
+              said announcing the prime minister's trip. 
             </li>
             <br/>
             <li>
@@ -52,6 +52,7 @@ const OnePageProfile = () => {
             
           <button>
                 <a href="https://en.wikipedia.org/wiki/Narendra_Modi">
+                
                     go to wikipedia
                 </a>
           </button>
