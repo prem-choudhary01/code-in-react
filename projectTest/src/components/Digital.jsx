@@ -10,5 +10,7 @@ function Clock() {
   setInterval(UpdateTime);
   return <h1 className="time">{ctime}</h1>;
 }
+console.log("git add ")
+
 
 export default Clock;
