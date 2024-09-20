@@ -4,12 +4,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #333;
+  background-color: #141616;
   color: white;
 }
 
 .navbar:hover {
-  background-color: #444; 
+  background-color: #c4c4da; 
 }
 
 .navbar-logo {
@@ -60,4 +60,12 @@
   .navbar-toggle {
     display: flex;
   }
+}
+
+h1{
+  color: rgb(61, 49, 48);
+
+}
+p{
+  color: rgb(172, 33, 33);
 }
