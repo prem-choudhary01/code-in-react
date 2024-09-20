@@ -1,14 +1,12 @@
-import { useState } from "react";
-function App() {
-  let time = new Date().toLocaleTimeString();
+import Clock from "./components/Digital";
 
-  const [ctime, setTime] = useState(time);
-  const UpdateTime = () => {
-    time = new Date().toLocaleTimeString();
-    setTime(time);
-  };
-  setInterval(UpdateTime);
-  return <h1 className="time">{ctime}</h1>;
+function App() {
+
+  return(
+  <>
+  <Clock/>
+  </> 
+  )
 }
 
 export default App;
