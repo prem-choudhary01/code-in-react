@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-// import React{useEffect} from "react";
 
 const Spinner = () => {
   const [text, setText] = useState("");
   const [showImg, setShowImg] = useState(true);
+//   console.log("1")
 
   useEffect(() => {
     setShowImg(false);
@@ -14,7 +14,16 @@ const Spinner = () => {
 
   return (
     <>
-      <div>{showImg ? <img src=""  /> : <h2>{text}</h2>}</div>
+      <div>
+        {showImg ? (
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS789NyUdpX3QENXM1a9d3367Dq5eU-EW_76A&s"
+            alt="Spinner"
+          />
+        ) : (
+          <h2>{text}</h2>
+        )}
+      </div>
     </>
   );
 };
