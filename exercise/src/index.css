@@ -1,0 +1,40 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+  /* background-color: antiquewhite; */
+
+#menu {
+  display: inline-flex;
+  list-style: none;
+  margin-right: 50px; 
+  background-color: white;
+   height: 800px;  
+   width: 350px; 
+   border: 1px solid black;
+}
+#img {
+  height: 280px;
+  width: 300px;
+  /* margin: auto; */
+}
+h2 {
+  background-color: white;
+  margin-bottom: 2px;
+}
+
+#btn {
+  color: #007185;
+  margin-right: 229px;
+  margin-top: 20px;
+}
+#btn:hover {
+  color: brown;
+}
+/* #menu ul {
+  list-style: none;
+} */
+/* #menu li {
+  display: inline;
+} */
+
