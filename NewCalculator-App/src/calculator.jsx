@@ -1,7 +1,4 @@
-// src/Calculator.js
 import { useState } from "react";
-// import "./Calculator.css";
-
 const Calculator = () => {
   const [input, setInput] = useState("0");
   const [result, setResult] = useState("");
@@ -26,30 +23,30 @@ const Calculator = () => {
   return (
     <div className="calculator">
       <div className="display">
-        <div className="input">{input} </div> 
+        <div className="input">{input} </div>
         <div className="result">{result}</div>
-      </div> 
-      <div className="buttons"> 
+      </div>
+      <div className="buttons">
         {[
-          "7",
-          "8",
-          "9",
-          "4",
-          "5",
-          "6",
-          "1",
-          "2",
-          "3",
-          "0",
-          "-",
-          "+",
-          ".",
-          "=",
-          "*",
           "/",
           "(",
           ")",
+          "+",
+          "7",
+          "8",
+          "9",
+          "-",
+          "4",
+          "5",
+          "6",
+          "*",
+          "1",
+          "2",
+          "3",
+          "=",
           "%",
+          "0",
+          ".",
         ].map((btn) => (
           <button
             key={btn}

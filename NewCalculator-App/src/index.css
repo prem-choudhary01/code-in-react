@@ -137,35 +137,35 @@ button:focus {
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
+button:nth-child(1) {
+  background-color: #ff4081;
+  color: #fff;
+}
+
+button:nth-child(2) {
+  background-color: #ff4081;
+  color: #fff;
+}
+
+button:nth-child(3) {
+  background-color: #ff4081;
+  color: #fff;
+}
+
+button:nth-child(4) {
+  background-color: #ff4081;
+  color: #fff;
+}
+
+
+
+button:nth-child(8) {
+  background-color: #ff4081;
+  color: #fff;
+}
+
+
 button:nth-child(16) {
-  background-color: #ff4081;
-  color: #fff;
-}
-
-button:nth-child(19) {
-  background-color: #ff4081;
-  color: #fff;
-}
-
-button:nth-child(12) {
-  background-color: #ff4081;
-  color: #fff;
-}
-
-button:nth-child(11) {
-  background-color: #ff4081;
-  color: #fff;
-}
-
-
-
-button:nth-child(13) {
-  background-color: #ff4081;
-  color: #fff;
-}
-
-
-button:nth-child(14) {
   background-color: #ff4081;
   color: #fff;
 }
@@ -175,7 +175,7 @@ button:nth-child(1):active {
   background-color: #c2185b;
 }
 
-button:nth-child(15) {
+button:nth-child(12) {
   background-color: #ff4081;
   color: #fff;
 }
