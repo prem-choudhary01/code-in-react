@@ -82,7 +82,7 @@ export default function Contact() {
                   />
                 </svg>
                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                  info@acme.org
+                 prem.kumar18@outlook.com
                 </div>
               </div>
             </div>
