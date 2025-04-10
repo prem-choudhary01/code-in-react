@@ -1,8 +1,8 @@
 const Exercise = () => {
-  const item = ["Itme 1 ", "Item 2" , ].map((x) => ({
+  const item = ["Itme 1 ", "Item 2" ,"Item 3" ].map((x) => ({
     title: x,
     url: "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v3._SY304_CB573698005_.jpg",
-    // url1 :"https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v5._SY304_CB573698005_.jpg"
+     url :"https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v5._SY304_CB573698005_.jpg"
   }));
 
   return (
