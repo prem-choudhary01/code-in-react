@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useTodo } from "../contexts";
-
 function TodoItem({ todo }) {
   const [isTodoEditable, setIsTodoEditable] = useState(false);
   const [todoMsg, setTodoMsg] = useState(todo.todo);
@@ -10,14 +9,11 @@ function TodoItem({ todo }) {
     updateTodo(todo.id, { ...todo, todo: todoMsg });
     setIsTodoEditable(false);
   };
-
   const toggleCompleted = () => {
     toggleComplete(todo.id);
   };
-
   return (
     <div className="flex flex-col gap-1">
-      {/* Todo Row */}
       <div
         className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300 text-black ${
           todo.completed ? "bg-[#c6e9a7]" : "bg-[#ccbed7]"
@@ -58,7 +54,6 @@ function TodoItem({ todo }) {
           ❌
         </button>
       </div>
-
       {todo.completed && (
         <span className="text-green-700 text-sm font-medium ml-2">
           ✅ Task Completed
@@ -67,5 +62,4 @@ function TodoItem({ todo }) {
     </div>
   );
 }
-
 export default TodoItem;
