@@ -19,7 +19,7 @@ function App() {
   };
   const multiplicationValue = () => {
     multiplication = multiplication * 2;
-    setMultiplication(multiplication);
+    setMultiplication(multiplication);  
   };
   const divisionValue = () => {
     if (division <= 2) return;

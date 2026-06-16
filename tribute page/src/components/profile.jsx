@@ -6,11 +6,11 @@ const OnePageProfile = () => {
       <div id="parent">
         <header>
           <h1>Narendra modi</h1>
-          <p>prime minister of india</p>
+          <p>Prime minister of india</p>
         </header>
 
         <section id="boigraphy">
-          <img src="https://static.theprint.in/wp-content/uploads/2021/08/Modi-I-Day.jpg" />
+          {/* <img src="https://static.theprint.in/wp-content/uploads/2021/08/Modi-I-Day.jpg" /> */}
           <p>
             Narendra Modi, born on September 17, 1950, in Vadnagar, Gujarat, is
             the current Prime Minister of India. He has been in office since May

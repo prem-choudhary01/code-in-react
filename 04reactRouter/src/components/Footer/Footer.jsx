@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { Link } from "react-router-dom";
 // import { matchPath } from "react-router-dom";
 export default function Footer() {
@@ -81,7 +81,7 @@ export default function Footer() {
             <a href="https://premchoudhary.com/" className="hover:underline">
               Praveen Sirvi
             </a>
-            . All Rights Reserved.
+            . All Rights Reserved.     
           </span>
           <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
             <Link to="#" className="text-gray-500 hover:text-gray-900">
