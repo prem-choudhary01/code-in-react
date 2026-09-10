@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useTodo } from "../contexts";
 function TodoItem({ todo }) {
   const [isTodoEditable, setIsTodoEditable] = useState(false);
@@ -7,7 +7,7 @@ function TodoItem({ todo }) {
 
   const editTodo = () => {
     updateTodo(todo.id, { ...todo, todo: todoMsg });
-    setIsTodoEditable(false); 
+    setIsTodoEditable(false);
   };
   const toggleCompleted = () => {
     toggleComplete(todo.id);
@@ -32,7 +32,7 @@ function TodoItem({ todo }) {
           } ${todo.completed ? "line-through" : ""}`}
           value={todoMsg}
           onChange={(e) => setTodoMsg(e.target.value)}
-          readOnly={!isTodoEditable}
+          readOnly={!isTodoEditable} 
         />
         <button
           className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 disabled:opacity-50"
